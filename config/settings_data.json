@@ -79,7 +79,7 @@
         "settings": {
           "chat_bubble_color": "#5046e4",
           "welcome_message": "👋 Hi there! How can I help you today?",
-          "system_prompt": "standardAssistant"
+          "system_prompt": "enthusiasticAssistant"
         }
       }
     },
