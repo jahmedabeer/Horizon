@@ -77,7 +77,7 @@
         "type": "shopify://apps/shop-chat-agent/blocks/chat-interface/eeef46a0-fd4c-442c-b730-40ef6c0978e5",
         "disabled": false,
         "settings": {
-          "chat_bubble_color": "#5046e4",
+          "chat_bubble_color": "#000000cf",
           "welcome_message": "👋 Hi there! How can I help you today?",
           "system_prompt": "enthusiasticAssistant"
         }
