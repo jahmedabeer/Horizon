@@ -9,79 +9,17 @@
  */
 {
   "sections": {
-    "marquee_BtRDLa": {
-      "type": "marquee",
-      "blocks": {
-        "text_gFFRgJ": {
-          "type": "text",
-          "settings": {
-            "text": "<p>We make things that work better and last longer.</p>",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "custom",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "tight",
-            "letter_spacing": "tight",
-            "case": "none",
-            "wrap": "nowrap",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "text_gFFRgJ"
-      ],
-      "name": "t:names.marquee_section",
-      "settings": {
-        "movement_direction": "normal",
-        "color_scheme": "",
-        "padding-block-start": 24,
-        "padding-block-end": 24,
-        "gap_between_elements": 24
-      }
-    },
-    "hero_jVaWmY": {
+    "hero_NHDeXD": {
       "type": "hero",
       "blocks": {
-        "logo_4AeNBU": {
-          "type": "logo",
-          "name": "t:names.logo",
-          "settings": {
-            "inverse": false,
-            "font": "accent",
-            "unit": "percent",
-            "percent_width": 50,
-            "pixel_height": 96,
-            "custom_mobile_size": true,
-            "unit_mobile": "pixel",
-            "percent_width_mobile": 100,
-            "pixel_height_mobile": 40,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "text_iXYWz6": {
+        "text_YKMTXX": {
           "type": "text",
-          "name": "t:names.text",
           "settings": {
-            "text": "<p>With a focus on quality and design, we curate products that enhance your everyday.</p>",
+            "text": "<h1>New arrivals</h1>",
             "width": "fit-content",
             "max_width": "narrow",
             "alignment": "left",
-            "type_preset": "rte",
+            "type_preset": "h1",
             "font": "var(--font-body--family)",
             "font_size": "1rem",
             "line_height": "normal",
@@ -98,11 +36,52 @@
             "padding-inline-end": 0
           },
           "blocks": {}
+        },
+        "text_nnx9xX": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Made with care and unconditionally loved by our customers.</p>",
+            "width": "fit-content",
+            "max_width": "narrow",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 32,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "button_Rrekqt": {
+          "type": "button",
+          "name": "t:names.button",
+          "settings": {
+            "label": "Shop Now",
+            "link": "shopify://collections/all",
+            "open_in_new_tab": false,
+            "style_class": "button",
+            "width": "fit-content",
+            "custom_width": 100,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "logo_4AeNBU",
-        "text_iXYWz6"
+        "text_YKMTXX",
+        "text_nnx9xX",
+        "button_Rrekqt"
       ],
       "name": "t:names.hero",
       "settings": {
@@ -110,26 +89,26 @@
         "open_in_new_tab": false,
         "media_type_1": "image",
         "media_type_2": "image",
-        "content_direction": "row",
+        "content_direction": "column",
         "vertical_on_mobile": true,
-        "horizontal_alignment": "space-between",
-        "vertical_alignment": "flex-end",
-        "align_baseline": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "center",
-        "vertical_alignment_flex_direction_column": "space-between",
-        "gap": 20,
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 16,
         "section_width": "page-width",
-        "section_height": "small",
+        "section_height": "large",
         "section_height_custom": 50,
-        "color_scheme": "scheme-6",
+        "color_scheme": "scheme-5",
         "toggle_overlay": true,
-        "overlay_color": "#00000014",
+        "overlay_color": "#00000026",
         "overlay_style": "gradient",
-        "gradient_direction": "to bottom",
-        "blurred_reflection": true,
+        "gradient_direction": "to top",
+        "blurred_reflection": false,
         "reflection_opacity": 75,
-        "padding-block-start": 100,
-        "padding-block-end": 48
+        "padding-block-start": 40,
+        "padding-block-end": 40
       }
     },
     "product_list_qU3bEB": {
@@ -392,8 +371,7 @@
     }
   },
   "order": [
-    "marquee_BtRDLa",
-    "hero_jVaWmY",
+    "hero_NHDeXD",
     "product_list_qU3bEB"
   ]
 }
