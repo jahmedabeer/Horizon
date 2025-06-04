@@ -557,7 +557,7 @@
       "block_order": [
         "group_pRXURn"
       ],
-      "name": "t:names.custom_section",
+      "name": "Video with text",
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
