@@ -13,4 +13,3 @@
 #   /(templates|sections)/.*\.json/
 
 # Ignore local directory
-locales/*.json
