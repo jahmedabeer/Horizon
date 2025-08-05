@@ -5,7 +5,6 @@
 [environments.development]
 # Development environment settings
 store = "jakdevstore.myshopify.com"
-theme = "180175208741"
 ignore = [
   "locales/bg.json",
   "locales/cs.json",
