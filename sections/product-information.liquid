@@ -1,8 +1,8 @@
 {% liquid
   if section.settings.desktop_media_position == 'left'
-    assign render_order = 'media,product-details'
+    assign render_order = 'media,multiple_variant_images,product-details'
   else
-    assign render_order = 'product-details,media'
+    assign render_order = 'product-details,media,multiple_variant_images'
   endif
 
   assign product_has_media = true
@@ -68,19 +68,16 @@
     {% endcapture %}
 
     {% capture multiple_variant_images %}
-      {%- content_for 'block',
-        type: '_multiple-variant-images',
-        id: 'media-gallery',
-        closest.product: closest.product
-      -%}
-    {% endcapture %}
-
-    {% capture multiple_variant_images %}
-      {%- content_for 'block',
-        type: '_multiple-variant-images',
-        id: 'media-gallery',
-        closest.product: closest.product
-      -%}
+      <div
+        class="product-information__media"
+        data-testid="product-information-media"
+      >
+        {%- content_for 'block',
+          type: '_multiple-variant-images',
+          id: 'multiple-variant-images',
+          closest.product: closest.product
+        -%}
+      </div>
     {% endcapture %}
 
     {% capture details %}
@@ -92,11 +89,9 @@
     {% endcapture %}
 
     {% for block in render_order_array %}
-      {% if block == 'media' and product_has_media %}
+      {% if block == 'media' and product_has_media and product.has_only_default_variant %}
         {{ media }}
-      {% elsif block == 'multiple-variant-images' and product.has_only_default_variant == false %}
-        {{ multiple_variant_images }}
-      {% elsif block == 'multiple-variant-images' and product.has_only_default_variant == false %}
+      {% elsif block == 'multiple_variant_images' and product_has_media and product.has_only_default_variant == false %}
         {{ multiple_variant_images }}
       {% elsif block == 'product-details' %}
         {{ details }}
