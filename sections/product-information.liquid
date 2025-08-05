@@ -67,6 +67,14 @@
       </div>
     {% endcapture %}
 
+    {% capture multiple_variant_images %}
+      {%- content_for 'block',
+        type: '_multiple-variant-images',
+        id: 'media-gallery',
+        closest.product: closest.product
+      -%}
+    {% endcapture %}
+
     {% capture details %}
       {% content_for 'block',
         type: '_product-details',
