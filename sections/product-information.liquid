@@ -59,19 +59,11 @@
         class="product-information__media"
         data-testid="product-information-media"
       >
-        {% if product.has_only_default_variant %}
-          {%- content_for 'block',
-            type: '_product-media-gallery',
-            id: 'media-gallery',
-            closest.product: closest.product
-          -%}
-        {% else %}
-          {%- content_for 'block',
-            type: '_multiple-variant-images',
-            id: 'media-gallery',
-            closest.product: closest.product
-          -%}
-        {% endif %}
+        {%- content_for 'block',
+          type: '_product-media-gallery',
+          id: 'media-gallery',
+          closest.product: closest.product
+        -%}
       </div>
     {% endcapture %}
 
