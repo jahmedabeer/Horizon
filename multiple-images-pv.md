@@ -3,5 +3,6 @@
 - [A new collection of free themes by Shopify](https://themes.shopify.com/collections/horizon-themes)
 
 ## Implementation
+- modify product-information.liquid
 - Create a new block called `Multiple Variant Images`
-- Create a new file called custom.js
+- Create a new file called multiple-variant-img.js
