@@ -90,14 +90,16 @@
 
   if selected_variant_media
     assign sorted_media = sorted_media | concat: selected_product.media | where: 'id', selected_variant_media.id
+
     for media in variant_gallery
       if media.id != selected_variant_media.id
         assign found_media = variant_gallery | where: 'id', media.id
         assign sorted_media = sorted_media | concat: found_media
       endif
     endfor
+  else
+    assign sorted_media = selected_product.media
   endif
-
   assign has_image_drop = sorted_media | has: 'media_type', 'image'
 
   # Determine if we're in single column mode (carousel or grid with one column)
