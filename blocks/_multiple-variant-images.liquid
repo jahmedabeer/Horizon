@@ -28,7 +28,11 @@
   assign render_mobile_slideshow_controls = false
 
   if block_settings.slideshow_controls_style != block_settings.slideshow_mobile_controls_style
-    assign slideshow_controls_class = 'mobile:hidden'
+    if block_settings.show_thumbnail_mobile
+      assign slideshow_controls_class = 'mobile:block'
+    else
+      assign slideshow_controls_class = 'mobile:hidden'
+    endif
 
     if block_settings.slideshow_mobile_controls_style != 'hint'
       assign render_mobile_slideshow_controls = true
@@ -48,7 +52,7 @@
   else
     assign slideshow_class = ''
 
-    if block_settings.media_presentation == 'carousel'
+    if block_settings.media_presentation == 'carousel' or block_settings.show_arrows_mobile
       assign render_slideshow_arrows = true
     endif
   endif
@@ -352,9 +356,16 @@
     {% endcapture %}
   {% endif %}
 
-  {% if render_slideshow_arrows %}
+  {% if render_slideshow_arrows and sorted_media.size > 1 %}
+    {% liquid
+      if block_settings.show_arrows_mobile
+        assign show_arrows = 'mobile:block'
+      else
+        assign show_arrows = 'mobile:hidden'
+      endif
+    %}
     {% capture slideshow_arrows %}
-      {% render 'slideshow-arrows', class: 'mobile:hidden', icon_style: block_settings.icons_style, icon_shape: settings.icons_shape %}
+      {% render 'slideshow-arrows',class: show_arrows, sorted_media_size, icon_style: block_settings.icons_style, icon_shape: settings.icons_shape %}
     {% endcapture %}
   {% endif %}
 
@@ -565,6 +576,9 @@
   }
 
   @media screen and (max-width: 749px) {
+    slideshow-arrows.mobile\:block .slideshow-control {
+      opacity: 1;
+    }
     .dialog-zoomed-gallery {
       /* Prevent scroll wheel or swipe scrolling */
       overscroll-behavior: none;
@@ -805,6 +819,19 @@
           "label": "t:options.hint"
         }
       ]
+    },
+    {
+      "type": "checkbox",
+      "id": "show_arrows_mobile",
+      "label": "Show arrows on mobile",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_thumbnail_mobile",
+      "label": "Show thumbnail on mobile",
+      "default": false,
+      "visible_if": "{{ block.settings.media_presentation == 'carousel' }}"
     },
     {
       "type": "header",
