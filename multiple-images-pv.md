@@ -5,4 +5,3 @@
 ## Implementation
 - modify product-information.liquid
 - Create a new block called `Multiple Variant Images`
-- Create a new file called multiple-variant-img.js
