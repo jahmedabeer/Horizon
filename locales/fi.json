@@ -50,7 +50,7 @@
     "scroll_to": "Vieritä kohtaan {{ title }}",
     "loading_product_recommendations": "Tuotesuositusten lataaminen",
     "discount": "Käytä alennuskoodia",
-    "discount_menu": "Alennuskoodit",
+    "discount_menu": "Alennusvalikko",
     "discount_applied": "Käytetty alennuskoodi: {{ code }}",
     "open_cart_drawer": "Avaa ostoskori",
     "inventory_status": "Varaston tila",

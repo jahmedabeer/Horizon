@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "main": {
       "type": "main-blog",
@@ -16,21 +16,20 @@
           "type": "text",
           "name": "Title",
           "settings": {
-            "text": "<p>{{ closest.blog.title }}</p>",
-            "width": "fit-content",
-            "max_width": "narrow",
-            "alignment": "left",
+            "text": "<h1>{{ closest.blog.title }}</h1>",
             "type_preset": "h2",
-            "font": "var(--font-primary--family)",
+            "font": "var(--font-body--family)",
             "font_size": "",
+            "color": "var(--color-foreground)",
             "line_height": "normal",
             "letter_spacing": "normal",
             "case": "none",
             "wrap": "pretty",
-            "color": "",
+            "width": "fit-content",
+            "max_width": "narrow",
+            "alignment": "left",
             "background": false,
             "background_color": "#00000026",
-            "corner_radius": 0,
             "padding-block-start": 48,
             "padding-block-end": 48,
             "padding-inline-start": 0,
@@ -50,18 +49,18 @@
               "name": "t:names.title",
               "static": true,
               "settings": {
-                "type_preset": "h4",
-                "font": "var(--font-primary--family)",
+                "font": "var(--font-body--family)",
                 "font_size": "",
+                "color": "var(--color-foreground)",
                 "line_height": "normal",
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
-                "color": "",
                 "text": "",
                 "read_only": true,
                 "alignment": "left",
                 "show_alignment": false,
+                "type_preset": "h4",
                 "padding-block-start": 0,
                 "padding-block-end": 10,
                 "padding-inline-start": 0,
@@ -75,11 +74,21 @@
               "static": true,
               "settings": {
                 "show_date": true,
-                "show_author": false,
+                "show_author": true,
                 "type_preset": "",
                 "alignment": "left",
                 "show_alignment": false,
                 "padding-block-start": 0,
+                "padding-block-end": 0
+              },
+              "blocks": {}
+            },
+            "description": {
+              "type": "_blog-post-description",
+              "static": true,
+              "settings": {
+                "type_preset": "rte",
+                "padding-block-start": 16,
                 "padding-block-end": 0
               },
               "blocks": {}
