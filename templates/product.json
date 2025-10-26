@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "main": {
       "type": "product-information",
@@ -71,8 +71,6 @@
               "type": "group",
               "name": "Header",
               "settings": {
-                "link": "",
-                "open_in_new_tab": false,
                 "content_direction": "column",
                 "vertical_on_mobile": true,
                 "horizontal_alignment": "flex-start",
@@ -96,11 +94,13 @@
                 "border_width": 1,
                 "border_opacity": 100,
                 "border_radius": 0,
-                "placeholder": "",
                 "toggle_overlay": false,
                 "overlay_color": "#00000026",
                 "overlay_style": "solid",
                 "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "placeholder": "",
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
@@ -221,6 +221,13 @@
               },
               "block_order": []
             },
+            "back_in_stock_star_rating_tjreGd": {
+              "type": "shopify://apps/back-in-stock/blocks/star_rating/019a1fb0-2ae0-7428-a41c-1b65f6a7e005",
+              "settings": {
+                "product": "{{closest.product}}",
+                "colour": "#ff0000"
+              }
+            },
             "text_aEtTtq": {
               "type": "text",
               "name": "Product description",
@@ -253,6 +260,7 @@
             "divider_VJhene",
             "variant_picker_R3rGDr",
             "buy_buttons_eYQEYi",
+            "back_in_stock_star_rating_tjreGd",
             "text_aEtTtq"
           ]
         }
