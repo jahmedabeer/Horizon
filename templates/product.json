@@ -221,11 +221,10 @@
               },
               "block_order": []
             },
-            "back_in_stock_star_rating_tjreGd": {
-              "type": "shopify://apps/back-in-stock/blocks/star_rating/019a1fb0-2ae0-7428-a41c-1b65f6a7e005",
+            "back_in_stock_back_in_stock_B6REJR": {
+              "type": "shopify://apps/back-in-stock/blocks/back_in_stock/019a1fb0-2ae0-7428-a41c-1b65f6a7e005",
               "settings": {
-                "product": "{{closest.product}}",
-                "colour": "#ff0000"
+                "product": "{{closest.product}}"
               }
             },
             "text_aEtTtq": {
@@ -260,7 +259,7 @@
             "divider_VJhene",
             "variant_picker_R3rGDr",
             "buy_buttons_eYQEYi",
-            "back_in_stock_star_rating_tjreGd",
+            "back_in_stock_back_in_stock_B6REJR",
             "text_aEtTtq"
           ]
         }
