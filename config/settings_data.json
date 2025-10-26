@@ -7,19 +7,8 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
  {
   "current": {
-    "type_size_paragraph": "14",
     "type_font_h1": "heading",
     "logo_height": 36,
     "logo_height_mobile": 28,
