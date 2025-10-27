@@ -221,8 +221,8 @@
               },
               "block_order": []
             },
-            "back_in_stock_back_in_stock_B6REJR": {
-              "type": "shopify://apps/back-in-stock/blocks/back_in_stock/019a1fb0-2ae0-7428-a41c-1b65f6a7e005",
+            "back_in_stock_back_in_stock_tNyQjt": {
+              "type": "shopify://apps/back-in-stock/blocks/back_in_stock/019a2477-a614-703c-ab80-d59eb8ee6578",
               "settings": {
                 "product": "{{closest.product}}"
               }
@@ -259,7 +259,7 @@
             "divider_VJhene",
             "variant_picker_R3rGDr",
             "buy_buttons_eYQEYi",
-            "back_in_stock_back_in_stock_B6REJR",
+            "back_in_stock_back_in_stock_tNyQjt",
             "text_aEtTtq"
           ]
         }
