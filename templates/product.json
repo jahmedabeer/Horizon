@@ -224,7 +224,8 @@
             "back_in_stock_back_in_stock_tNyQjt": {
               "type": "shopify://apps/back-in-stock/blocks/back_in_stock/019a2477-a614-703c-ab80-d59eb8ee6578",
               "settings": {
-                "product": "{{closest.product}}"
+                "product": "{{closest.product}}",
+                "klaviyo_api_key": "WhPRU"
               }
             },
             "text_aEtTtq": {
