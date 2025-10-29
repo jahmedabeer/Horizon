@@ -161,6 +161,13 @@
                 "price_tVjtKg"
               ]
             },
+            "first_app_dev_js_star_rating_McP9ha": {
+              "type": "shopify://apps/first-app-dev-js/blocks/star_rating/019a310c-3889-7277-b156-7ba9c2fa7023",
+              "settings": {
+                "product": "{{closest.product}}",
+                "colour": "#ff0000"
+              }
+            },
             "divider_VJhene": {
               "type": "_divider",
               "name": "t:names.divider",
@@ -221,13 +228,6 @@
               },
               "block_order": []
             },
-            "back_in_stock_back_in_stock_tNyQjt": {
-              "type": "shopify://apps/back-in-stock/blocks/back_in_stock/019a2477-a614-703c-ab80-d59eb8ee6578",
-              "settings": {
-                "product": "{{closest.product}}",
-                "klaviyo_api_key": "WhPRU"
-              }
-            },
             "text_aEtTtq": {
               "type": "text",
               "name": "Product description",
@@ -257,10 +257,10 @@
           },
           "block_order": [
             "group_icgrde",
+            "first_app_dev_js_star_rating_McP9ha",
             "divider_VJhene",
             "variant_picker_R3rGDr",
             "buy_buttons_eYQEYi",
-            "back_in_stock_back_in_stock_tNyQjt",
             "text_aEtTtq"
           ]
         }
